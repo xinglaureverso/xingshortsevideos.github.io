@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Criar Perfil - XingStudio</title>
+  <link rel="stylesheet" href="criar-perfil.css">
+</head>
+<body>
+  <header>
+    <h1>👤 Criar Seu Perfil</h1>
+    <a href="xingstudio.html" class="voltar">⬅️ Voltar ao Estúdio</a>
+  </header>
+
+  <main>
+    <form id="formPerfil">
+      <label>Nome de Usuário:</label>
+      <input type="text" id="nome" placeholder="Seu nome criador..." required>
+
+      <label>Avatar:</label>
+      <input type="file" id="avatar" accept="image/*">
+
+      <label>Sobre Você:</label>
+      <textarea id="bio" placeholder="Conte algo sobre seu estilo de criação"></textarea>
+
+      <button type="submit">💾 Salvar Perfil</button>
+    </form>
+
+    <div id="previewPerfil" style="display: none;">
+      <h2>✨ Preview do Perfil</h2>
+      <img id="avatarPreview" alt="Avatar" />
+      <p id="nomePreview"></p>
+      <p id="bioPreview"></p>
+    </div>
+  </main>
+
+  <script src="criar-perfil.js"></script>
+</body>
+</html>

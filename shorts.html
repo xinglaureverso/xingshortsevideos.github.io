@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>XingShorts</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="nav">
+  <button onclick="goBack()">⬅️ Voltar para os Vídeos</button>
+</div>
+
+  <div class="shorts-layout">
+    <div class="video-section">
+      <video src="shorts/short1.mp4" controls autoplay loop muted></video>
+      <div class="info">
+        <h2>@xingvideosexingshortsofc</h2>
+        <p>bem vindos a xingshorts! #xingshorts</p>
+          <div class="actions">
+            <button class="pulsar" onclick="like()">❤️ Curtir</button>
+  <button onclick="toggleComments()">💬 Comentários</button>
+  <button onclick="share()">🔄 Compartilhar</button>
+</div>
+      </div>
+    </div>
+
+    <div class="comments-panel" id="comments">
+      <h3>Comentários</h3>
+      <ul id="comment-list">
+        <li><strong>João:</strong> Muito massa esse vídeo 🔥</li>
+        <li><strong>Ana:</strong> Quero mais conteúdo assim!</li>
+      </ul>
+      <input type="text" id="comment-input" placeholder="Adicione um comentário..." />
+      <button onclick="addComment()">Enviar</button>
+    </div>
+  </div>
+
+  <script src="shorts.js"></script>
+</body>
+</html>

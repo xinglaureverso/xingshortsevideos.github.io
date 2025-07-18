@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Editor de Shorts - XingStudio</title>
+  <link rel="stylesheet" href="editor.css" />
+</head>
+<body>
+    
+    <nav class="barra-voltar">
+  <a href="xingstudio.html" class="botao-voltar">⬅️ Voltar ao Estúdio</a>
+</nav>
+
+  <h1>🎬 Editor de Shorts</h1>
+  <input type="file" id="videoInput" accept="video/*" />
+  
+  <div class="video-editor">
+    <video id="videoPreview" controls></video>
+    
+    <label>Início (seg): <input type="number" id="startTime" value="0" /></label>
+    <label>Fim (seg): <input type="number" id="endTime" value="10" /></label>
+
+    <label>Velocidade: 
+      <select id="speed">
+        <option value="1">Normal</option>
+        <option value="0.5">Lento</option>
+        <option value="2">Rápido</option>
+      </select>
+    </label>
+
+    <button onclick="aplicarEdicao()">Aplicar Edição</button>
+  </div>
+
+  <script src="editor.js"></script>
+</body>
+</html>

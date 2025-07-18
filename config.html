@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Configurações</title>
+  <link rel="stylesheet" href="style-config.css">
+</head>
+<body>
+  <div class="config-container">
+    <h1>⚙️ Configurações</h1>
+
+    <div class="config-options">
+      <label>
+        <input type="checkbox" id="darkMode" onchange="toggleDarkMode()" />
+        Modo Escuro
+      </label>
+
+      <label>
+        <input type="checkbox" id="notifyToggle" />
+        Notificações
+      </label>
+
+      <button onclick="goBack()">⬅️ Voltar</button>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Explorar - Xingvideos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+
+<div class="avatar-menu">
+  <img src="imagens/perfil_padrao.png" alt="Foto do perfil" onclick="toggleMenu()" />
+  <div class="menu" id="menu">
+    <a href="config.html">⚙️ Configurações</a>
+  </div>
+</div>
+
+
+  <header>
+    <h1>🎥 Explorando o Xingvideos</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="login.html">Login</a>
+      <a href="shorts.html">shorts</a>
+                                    <a href="usuarios.html">xingtubers</a>
+      <a href="ia.html">IA (beta)</a>
+                              <a href="xingstudio.html">studio</a>
+
+    </nav>
+  </header>
+  
+<input type="text" id="barraPesquisa" placeholder="Buscar vídeos..." oninput="filtrarVideos()" />
+  <main>
+    <section class="videos populares">
+      <h2>Vídeos populares</h2>
+<div class="video-card">
+  <a href="player.html?video=video1.mp4&titulo=gastei+1M+de+reais+em+dubai">
+    <img src="thumbs/thumb1.jpg" alt="Miniatura do vídeo">
+    <p>gastei 1M de reais em dubai</p>
+  </a>
+</div>
+
+<div class="video-card">
+  <a href="player.html?video=video2.mp4&titulo=Título+do+Vídeo+2">
+    <img src="thumbs/thumb2.jpg" alt="Miniatura do vídeo 2">
+    <p>terraria no minecraft</p>
+  </a>
+</div>
+<div class="video-card">
+  <a href="player.html?video=video3.mp4&titulo=vida+de+dinossauro+no+minecraft">
+    <img src="thumbs/thumb3.jpg" alt="vida de dinossauro no minecraft">
+    <p>vida de dinossauro no minecraft</p>
+    </a>
+    </div>
+    <div class="video-card">
+  <a href="player.html?video=video4.mp4&titulo=video+novo+do+athos">
+    <img src="thumbs/thumb4.jpg" alt="Miniatura do vídeo">
+    <p>video sem titulo</p>
+  </a>
+</div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xingvideos - IA</title>
+  <style>
+    body { font-family: Arial; background: #111; color: #fff; padding: 30px; }
+    input, button { padding: 10px; font-size: 16px; margin-top: 10px; width: 300px; }
+    #resposta { margin-top: 20px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <a href="explorar.html">voltar</a>
+
+  <h1>🎬 Xingvideos IA</h1>
+  <input type="text" id="tema" placeholder="Digite um tema divertido...">
+  <button onclick="responder()">Gerar ideia</button>
+  <div id="resposta"></div>
+
+  <script>
+    function responder() {
+      const tema = document.getElementById("tema").value.toLowerCase();
+      let resposta;
+
+      if (tema.includes("games")) {
+        resposta = "Que tal um vídeo mostrando seu rage no jogo mais difícil do mundo?";
+      } else if (tema.includes("humor") || tema.includes("piada")) {
+        resposta = "Você poderia criar um vídeo explicando memes como se fosse um documentário sério!";
+      } else if (tema.includes("fails")) {
+        resposta = "Ótima ideia! Junta os maiores fails gamer e coloca uma narração tipo novela mexicana.";
+        } else if (tema.includes("ideia de video")) {
+        resposta = "Ótima ideia! crie um video dizendo que vai comprar um palhaço na dark web vai dar muitas visualizações!.";
+        } else if (tema.includes("quem criou o xingvideos?")) {
+        resposta = "xinglau reverso criou esse maravilhoso site sozinho";
+        } else if (tema.includes("como que faz pra barra de pesquisa funcionar")) {
+        resposta = "não tem como fazer a barra de pesquisa funcionar só você sendo o dono do site e saber programar";
+      } else {
+        resposta = `Hmm... "${tema}" eu ainda estou aprendendo isso mais as proximas atualizações quem sabe😅`;
+      }
+
+      document.getElementById("resposta").innerText = resposta;
+    }
+  </script>
+</body>
+</html>

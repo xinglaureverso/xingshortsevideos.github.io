@@ -1,0 +1,20 @@
+{
+  "name": "XingVideos",
+  "short_name": "XV",
+  "start_url": "https://localhost:8080/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#03dac5",
+  "icons": [
+    {
+      "src": "logo/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

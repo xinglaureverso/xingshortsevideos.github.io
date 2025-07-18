@@ -1,0 +1,50 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background-color: #ff0055;
+  padding: 40px 20px;
+}
+
+header img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.sobre, .videos {
+  padding: 30px;
+}
+
+footer {
+  background-color: #ff0055;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+}
+.botoes {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.botoes button {
+  background-color: #ff0055;
+  border: none;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botoes button:hover {
+  background-color: #e6004c;
+}

@@ -1,0 +1,42 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 30px;
+  background-color: #fefefe;
+  color: #333;
+}
+
+.video-editor {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.editor-buttons button {
+  background-color: #ff0050;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.editor-buttons button:hover {
+  transform: scale(1.05);
+  background-color: #ff3366;
+}

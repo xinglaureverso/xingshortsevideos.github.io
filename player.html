@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Player - Xingvideos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="tituloVideo">🎞️ Vídeo</h1>
+    <a href="explorar.html">← Voltar para explorar</a>
+  </header>
+
+  <main>
+    <video id="videoPlayer" controls width="100%"></video>
+
+    <div class="interacoes">
+      <button onclick="curtirVideo(this)">👍 Curtir</button>
+      <span class="contador">0</span>
+    </div>
+
+    <div class="comentarios">
+      <h3>Comentários</h3>
+      <textarea id="comentarioTexto" placeholder="Escreva seu comentário..."></textarea>
+      <button onclick="adicionarComentario()">Enviar</button>
+      <ul id="listaComentarios"></ul>
+    </div>
+  </main>
+
+  <script>
+    // Captura parâmetros da URL
+    const params = new URLSearchParams(window.location.search);
+    const videoSrc = params.get('video');
+    const titulo = params.get('titulo');
+
+    // Atualiza título e fonte do vídeo
+    document.getElementById('tituloVideo').innerText = titulo || 'Vídeo';
+    document.getElementById('videoPlayer').src = `videos/${videoSrc}`;
+
+    function curtirVideo(botao) {
+      const contador = botao.nextElementSibling;
+      let likes = parseInt(contador.innerText);
+      likes++;
+      contador.innerText = likes;
+    }
+
+    function adicionarComentario() {
+      const texto = document.getElementById('comentarioTexto').value;
+      if (texto.trim() === '') return;
+      const lista = document.getElementById('listaComentarios');
+      const item = document.createElement('li');
+      item.textContent = texto;
+      lista.appendChild(item);
+      document.getElementById('comentarioTexto').value = '';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro - Xingvideos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📝 Criar Conta</h1>
+    <p>Cadastre-se para desbloquear recursos exclusivos!</p>
+  </header>
+
+  <main>
+    <form onsubmit="return cadastrarUsuario()">
+      <input type="text" id="novoUsuario" placeholder="Novo usuário" required />
+      <input type="password" id="novaSenha" placeholder="Nova senha" required />
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <p>Já tem conta? <a href="login.html">Faça login</a></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Xingvideos. Sua jornada começa aqui.</p>
+  </footer>
+
+  <script src="cadastrar.js"></script>
+</body>
+</html>

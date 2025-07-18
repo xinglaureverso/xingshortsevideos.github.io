@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Erro 404 - Não encontrado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #0d0d0d;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #ff0057;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+    }
+
+    input[type="text"] {
+      padding: 12px;
+      font-size: 1em;
+      width: 80%;
+      max-width: 300px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    button {
+      background: #ff0057;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      margin-top: 10px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #ff8a00;
+    }
+
+    .result {
+      margin-top: 30px;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>😕 Opa! Página não encontrada</h1>
+  <p>Mas você pode procurar por usuários ou vídeos abaixo:</p>
+
+  <input type="text" id="searchBox" placeholder="Digite nome de usuário ou título de vídeo">
+  <br>
+  <button onclick="pesquisar()">🔍 Buscar</button>
+
+  <div class="result" id="resultBox"></div>
+
+  <script>
+    // Simulação de dados existentes
+    const baseDeDados = {
+      usuarios: ['reidaseditsofc', 'editsdivinos', 'transicaoperfeita'],
+      videos: ['Edit explosivo', 'Transições insanas', 'Remix visual']
+    };
+
+    function pesquisar() {
+      const termo = document.getElementById('searchBox').value.toLowerCase();
+      const resultadoBox = document.getElementById('resultBox');
+
+      if (baseDeDados.usuarios.includes(termo)) {problems
+        resultadoBox.innerHTML = `✅ Usuário encontrado! Redirecionando...`;
+        setTimeout(() => {
+          window.location.href = `${termo}@problemsyt.html`; // Simula redirecionamento para página do usuário
+        }, 1500);
+      } else if (baseDeDados.videos.map(v => v.toLowerCase()).includes(termo)) {
+        resultadoBox.innerHTML = `🎬 Vídeo encontrado! Redirecionando...`;
+        setTimeout(() => {
+          window.location.href = `videos/${termo}.html`; // Simula redirecionamento para vídeo
+        }, 1500);
+      } else {
+        resultadoBox.innerHTML = `❌ Nada encontrado com esse nome. Tente novamente!`;
+      }
+    }
+  </script>
+
+</body>
+</html>

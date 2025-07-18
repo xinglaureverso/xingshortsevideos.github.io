@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>XingStudio</title>
+  <link rel="stylesheet" href="style-xing.css">
+</head>
+<body>
+  <header>
+    <h1>🎬 XingStudio</h1>
+    <nav>
+      <a href="explorar.html">Explorar</a>
+      <a href="shorts.html">Shorts</a>
+      <a href="config.html">Configurações</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="highlight">
+      <h2>Bem-vindo ao seu estúdio de criação</h2>
+      <p>Você pode gravar, editar e publicar seus Shorts com estilo.</p>
+      <button onclick="criarNovoShort()">Criar Novo Short</button>
+      <a href="loading.html" class="botao-perfil">👤 Criar Perfil</a>
+    </section>
+
+    <section class="tools">
+      <h3>Ferramentas populares</h3>
+      <ul>
+        <li>🎥 Editor de Vídeo</li>
+        <li>🖌️ Estilizador de Botões</li>
+        <li>📁 Gerenciador de Shorts</li>
+      </ul>
+    </section>
+  </main>
+<p>upload de videos teste</p>
+<div class="upload-area">
+  <h2>📤 Enviar novo vídeo</h2>
+  <input type="file" id="videoUpload" accept="video/*" />
+  <br><br>
+  <video id="preview" controls style="display: none;"></video>
+</div>
+
+  <footer>
+    <p>&copy;XingStudio by xinglau reverso</p>
+  </footer>
+
+  <script src="studio.js"></script>
+</body>
+</html>
